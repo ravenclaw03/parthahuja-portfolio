@@ -6,6 +6,7 @@ import {
   AiOutlineMail,
   AiOutlineRead,
 } from "react-icons/ai";
+import { CgCodeSlash } from "react-icons/cg";
 import { BsPerson } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
 import IconWithTooltip from "./IconWithTooltip";
@@ -67,6 +68,14 @@ const Sidenav = () => {
           </a>
           <a
             onClick={handleNav}
+            href="#skills"
+            className=" w-[75%] flex justify-center items-center bg-red-800 shadow-purple-700 shadow-lg rounded-full m-2 p-4 hover:scale-110 ease-in duration-200 cursor-pointer hover:bg-red-600"
+          >
+            <CgCodeSlash className="size-5 text-white" />
+            <span className=" p-2 text-white">My Skills</span>
+          </a>
+          <a
+            onClick={handleNav}
             href="#contact"
             className=" w-[75%] flex justify-center items-center bg-red-800 shadow-purple-700 shadow-lg rounded-full m-2 p-4 hover:scale-110 ease-in duration-200 cursor-pointer hover:bg-red-600"
           >
@@ -77,7 +86,7 @@ const Sidenav = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden fixed top-[25%] z-10">
+      <div className="md:block hidden fixed top-[20%] z-10">
         <div className="flex flex-col">
           <a
             href="#home"
@@ -123,6 +132,15 @@ const Sidenav = () => {
             <IconWithTooltip
               icon={<BsPerson className="size-4 text-white" />}
               tooltipText="Resume"
+            />
+          </a>
+          <a
+            href="#skills"
+            className=" bg-red-800 shadow-orange-700 shadow-lg rounded-full m-2 p-4 hover:scale-110 ease-in duration-200 cursor-pointer hover:bg-red-600"
+          >
+            <IconWithTooltip
+              icon={<CgCodeSlash className="size-4 text-white" />}
+              tooltipText="My Skills"
             />
           </a>
           <a

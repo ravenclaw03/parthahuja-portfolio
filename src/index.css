@@ -1,7 +1,29 @@
+/* FILEPATH: /d:/WebDev/React/react-portfolio/src/index.css */
+/* BEGIN: abpxx6d04wxr */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
+}
+
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #991b1b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c2410c;
 }

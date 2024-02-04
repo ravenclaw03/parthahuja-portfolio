@@ -22,18 +22,21 @@ const Project = () => {
             img={sustain}
             title="SustainDine"
             details={"MongoDb, Express, React Native, NodeJs"}
+            para={"This app bridges surplus party/function food with NGOs to combat food wastage, contributing to the United Nations goal of ”Zero Hunger”."}
             link={"https://github.com/ravenclaw03/SustainDine"}
           />
           <ProjectItem
             img={yelp}
             title="YelpCamp"
             details={"MongoDb, Express, NodeJs, HTML, CSS"}
+            para={"A web app which involves creating, viewing, deleting campgrounds, signup, use of maps etc."}
             link={"https://yelpcamp-h2lk.onrender.com/"}
           />
           <ProjectItem
             img={lemon}
             title="Lemon&Citrus"
             details={"HTML, CSS"}
+            para={"A responsive restaurant website using HTML and CSS."}
             link={"https://ravenclaw03.github.io/Lemon-and-Citrus/"}
           />
         </Carousel>

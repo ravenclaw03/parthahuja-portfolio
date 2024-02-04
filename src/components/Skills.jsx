@@ -13,7 +13,7 @@ import react from "../assets/react.svg";
 
 const Skills = () => {
   return (
-    <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-12">
+    <div id="skills" className="max-w-[1040px] m-auto md:pl-20 p-4 py-12">
       <h1 className="text-center text-4xl font-bold mb-10">My Skills</h1>
       <div className="grid grid-cols-6 gap-5 items-center md:gap-8 select-none">
         <img src={mongo} alt="MongoDB" className="max-h-[100px]" />

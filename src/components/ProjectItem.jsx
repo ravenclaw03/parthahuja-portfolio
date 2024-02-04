@@ -1,4 +1,4 @@
-const ProjectItem = ({ img, title, details, link }) => {
+const ProjectItem = ({ img, title, details, link ,para }) => {
   return (
     <div
       className=" rounded-xl relative flex items-center justify-center  group hover:bg-gradient-to-r from-black to-red-800 w-full 
@@ -13,9 +13,10 @@ const ProjectItem = ({ img, title, details, link }) => {
         <h3 className="text-3xl text-white tracking-wider text-center font-bold ">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">{details}</p>
+        <p className="pb-2 pt-2 text-white text-center font-semibold ">{details}</p>
+        <p className="pb-4 pt-2 text-slate-400 text-center">{para}</p>
         <a href={link}>
-          <p className=" rounded-lg bg-red-700 p-2 text-white text-lg hover:bg-red-800">
+          <p className=" rounded-lg bg-red-800 p-2 text-white text-lg hover:bg-orange-700">
             More info
           </p>
         </a>
