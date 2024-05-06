@@ -21,7 +21,6 @@ const Home = () => {
           autoPlay
           loop
           muted
-          poster={home}
           onLoadedData={() => setVideoLoaded(true)}
         />
         {videoLoaded ? (
