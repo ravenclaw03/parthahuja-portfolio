@@ -52,7 +52,7 @@ const Home = () => {
       {videoLoaded ? (
         <div className="h-screen w-full top-0 left-0">
           <div className="text-slate-50 max-w-[700px] mx-auto h-screen w-full flex flex-col items-center justify-center">
-            <h1 className="sm:text-5xl text-4xl font-bold">
+            <h1 className="sm:text-5xl text-4xl font-bold text-center">
               Hey! I&apos;m <span className="text-orange-700">Parth Ahuja</span>
             </h1>
             <h2 className="sm:text-3xl text-xl pt-4 font-semibold font-mono">

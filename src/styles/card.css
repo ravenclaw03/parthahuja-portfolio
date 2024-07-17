@@ -63,7 +63,8 @@
 @media (max-width: 480px) {
     .project-image {
         height: auto; /* Reduce the height for smaller screens */
-        width:10.5rem
+        width:13.5rem;
+        border-radius: 5%;
     }
 
     .project-details {

@@ -38,7 +38,7 @@ const Skills = () => {
       <h1 className="text-center text-4xl font-bold mb-10 text-white">
         My Skills
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center md:gap-8 select-none w-[80%] mx-auto justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center md:gap-8 select-none w-[80%] mx-auto justify-items-center">
         {logos.map((logo, index) => (
           <div
             key={index}

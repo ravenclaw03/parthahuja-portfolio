@@ -10,7 +10,7 @@ const AboutMe = () => {
         <h1 className="text-center text-4xl font-bold mb-10">About Me</h1>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <img
-            className="h-[27rem] shadow-lg rounded-full border-4 border-white border-double"
+            className="md:h-[27rem] h-[16rem] shadow-lg rounded-full border-4 border-white border-double"
             src={about}
             alt="About Me"
           />

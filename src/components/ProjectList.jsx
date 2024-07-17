@@ -23,7 +23,7 @@ const ProjectList = () => {
       </h1>
       <Slider
         {...settings}
-        className=" w-[60%] mx-auto bg-white rounded-md"
+        className="w-[80%]  md:w-[60%] mx-auto bg-white rounded-md"
       >
         {projects.map((project, index) => (
           <div key={index} className="project-slide">
