@@ -1,0 +1,84 @@
+.project-slide {
+    text-align: center;
+}
+
+.project-image {
+    width: auto;
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h2 {
+    margin: 10px 0;
+}
+
+.project-details p {
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.slick-dots li button:before {
+  color: #dc2626; /* Change this to your desired color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #dc2626; /* Change this to your desired active dot color */
+}
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .project-image {
+        height: auto; /* Reduce the height for smaller screens */
+        width:15.5rem
+    }
+
+    .project-details {
+        padding: 10px; /* Reduce the padding for smaller screens */
+    }
+
+    .project-link {
+        padding: 8px 16px; /* Adjust the padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image {
+        height: auto; /* Reduce the height for smaller screens */
+        width:10.5rem
+    }
+
+    .project-details {
+        padding: 10px; /* Further reduce the padding for very small screens */
+    }
+
+    .project-link {
+        padding: 6px 12px; /* Adjust the padding for very small screens */
+    }
+
+    .project-details h2 {
+        font-size: 1.25rem; /* Adjust font size for very small screens */
+    }
+
+    .project-details p {
+        font-size: 0.75rem; /* Adjust font size for very small screens */
+    }
+}

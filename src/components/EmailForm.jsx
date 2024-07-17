@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import "../styles/contact.css"
 const EmailForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
    
-    const { name, email, subject } = form.current;
+    const { name, email} = form.current;
 
-    if (name.value && email.value && subject.value) {
+    if (name.value && email.value ) {
       emailjs
         .sendForm(
           "service_ozs6fnn",
@@ -32,39 +32,38 @@ const EmailForm = () => {
   };
 
   return (
-    <div>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className="flex flex-col md:px-[5rem]">
-          <input
-            type="text"
-            name="name"
-            className=" bg-transparent m-4 border-2 border-white px-1.5 sm:w-[17rem] "
-            id="name"
-            placeholder="Name"
-          />
+    <div className="">
+      <form form ref={form} onSubmit={sendEmail}>
+        <div className="card">
+          
+          <div className="input-div">
+            <input
+              type="text"
+              className="input"
+              placeholder="Name"
+              name="name"
+            />
+          </div>
+          <div className="input-div">
+            <input
+              type="text"
+              className="input"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
 
-          <input
-            type="email"
-            name="email"
-            className=" bg-transparent m-4 border-2 border-white px-1.5 sm:w-[17rem] "
-            placeholder="Email"
-          />
-          <input
-            type="text"
-            name="subject"
-            className=" bg-transparent m-4 border-2 border-white px-1.5 sm:w-[17rem] "
-            placeholder="Subject"
-          />
-          <textarea
-            name="message"
-            className=" bg-transparent m-4 border-2 border-white px-1.5 sm:w-[17rem]"
-            placeholder="Message"
-          />
-          <input
-            type="submit"
-            value="Send"
-            className="hover:text-orange-700 font-semibold text-lg text-center"
-          />
+          <div className="input-div">
+            <textarea
+              className="input"
+              type="text"
+              placeholder="Message"
+              name="message"
+            />
+          </div>
+          <div className="button-div">
+            <button className="submit">Submit</button>
+          </div>
         </div>
       </form>
     </div>

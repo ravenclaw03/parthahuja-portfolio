@@ -1,7 +1,6 @@
-// ExpItem.js
-import React from "react";
+/* eslint-disable react/prop-types */
 
-const ExpItem = ({ year, duration, details, title, company }) => {
+const ResponsibilityItem = ({ year, duration, details, title, company }) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
       <li className="mb-10 ml-4">
@@ -11,15 +10,15 @@ const ExpItem = ({ year, duration, details, title, company }) => {
             {year}
           </span>
           <span className="text-lg text-orange-600 font-semibold">{title}</span>
-          <span className="ml-2 mt-[0.6rem] text-md font-normal text-stone-400 leading-3">
+          <span className="ml-2 mt-[0.6rem] text-sm font-normal text-stone-400 leading-3">
             ( {duration} )
           </span>
         </p>
-        <p className="text-lg text-white font-semibold mt-1 ">{company}</p>
+        <p className="text-lg text-white font-semibold mt-1">{company}</p>
         <p className="my-2 text-base font-normal text-stone-500">{details}</p>
       </li>
     </ol>
   );
 };
 
-export default ExpItem;
+export default ResponsibilityItem;
