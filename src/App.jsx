@@ -13,15 +13,16 @@ function App() {
 
   return (
     <>
-      <Sidenav />
       <Home />
+      <Sidenav />
+
       <AboutMe />
       <Experience />
       {/* <Project /> */}
-      <ProjectList/>
+      <ProjectList />
       <Skills />
-      <Responsibility/>
-      <Contact/>
+      <Responsibility />
+      <Contact />
     </>
   );
 }
