@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import EmailForm from "./EmailForm";
-import CubeLoader from "./CubeLoader";
 
 const handleCallButton = () => {
   window.location.href = "tel:+91981017153";
