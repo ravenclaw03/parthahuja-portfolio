@@ -12,10 +12,10 @@ const EmailForm = () => {
     if (name.value && email.value ) {
       emailjs
         .sendForm(
-          "service_ozs6fnn",
-          "template_6m6pa5i",
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
           form.current,
-          "QUYpCMJzkcETsrO5z"
+          import.meta.env.VITE_USER_ID
         )
         .then(
           () => {
